@@ -2,7 +2,7 @@
 // @name        Linksbase
 // @description	Скрипт установки заметок на страницах, показа посещённых страниц.
 // @namespace   PSVScripts
-// @version     2.0.2
+// @version     2.0.3
 // @grant	GM_registerMenuCommand
 // @grant	GM_xmlhttpRequest
 // @grant	GM_setValue
