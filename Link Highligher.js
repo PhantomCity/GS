@@ -2,16 +2,16 @@
 // @name        Linksbase
 // @description	Скрипт установки заметок на страницах, показа посещённых страниц.
 // @namespace   PSVScripts
-// @version     2.0.3
+// @version     2.0.4
 // @grant	GM_registerMenuCommand
 // @grant	GM_xmlhttpRequest
 // @grant	GM_setValue
 // @grant	GM_getValue
 // @grant	GM_deleteValue
 // @grant	GM_getResourceURL
-// @resource	iconFav		http://findicons.com/icon/download/90508/star/32/png
-// @resource	iconNote	http://findicons.com/icon/download/41229/note/128/png
-// @resource	iconVisit	http://findicons.com/icon/download/440193/link/48/png
+// @resource	iconFav		http://findicons.com/icon/download/41765/heart/16/png
+// @resource	iconNote	http://findicons.com/icon/download/41229/note/16/png
+// @resource	iconVisit	http://findicons.com/icon/download/440193/link/16/png
 // ==/UserScript==
 
 // note:  http://ment-prav.narod.ru/images/note.png
