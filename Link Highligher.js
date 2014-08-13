@@ -9,13 +9,14 @@
 // @grant	GM_getValue
 // @grant	GM_deleteValue
 // @grant	GM_getResourceURL
-// @resource	iconFav		http://userscripts.org/images/heart.png
-// @resource	iconNote	http://ment-prav.narod.ru/images/note.png
-// @resource	iconVisit	http://www.lboro.ac.uk/departments/sbe/images/icon-external-link.png
+// @resource	iconFav		http://findicons.com/icon/download/90508/star/32/png
+// @resource	iconNote	http://findicons.com/icon/download/41229/note/128/png
+// @resource	iconVisit	http://findicons.com/icon/download/440193/link/48/png
 // ==/UserScript==
 
-
-//fav: http://www.marinemegastore.com/images/category/favourite.gif
+// note:  http://ment-prav.narod.ru/images/note.png
+// fav:   http://www.marinemegastore.com/images/category/favourite.gif
+// visit: http://www.lboro.ac.uk/departments/sbe/images/icon-external-link.png
 
 var IconFavCont = GM_getResourceURL('iconFav'); // '!\u2665';
 var IconNoteCont = GM_getResourceURL('iconNote'); // '!\u270D'; // 
