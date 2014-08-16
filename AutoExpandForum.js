@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        autoforum
-// @namespace PSVScripts
+// @namespace	PSVScripts
+// @description Автоматический разворот форума, для показа первых постов в списке раздач
 // @include     http://rutracker.org/*
 // @include     http://pornolab.net/*
 // @version     0.0.0
