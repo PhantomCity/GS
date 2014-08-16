@@ -4,7 +4,7 @@
 // @description Автоматический разворот форума, для показа первых постов в списке раздач
 // @include     http://rutracker.org/*
 // @include     http://pornolab.net/*
-// @version     0.0.0
+// @version     0.0.0.1
 // @_updateURL   https://userscripts.org/scripts/source/166707.user.js // чтоб вас!
 // @grant none
 // ==/UserScript==
