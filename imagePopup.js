@@ -5,4 +5,4 @@
 // @version	0.0.1.1
 // @icon	  http://findicons.com/icon/download/131805/image/48/png
 
-alert('JS loaded');
+window.alert('JS loaded');
