@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        autoforum
 // @namespace	PSVScripts
-// @description Автоматический разворот форума, для показа первых постов в списке раздач rutracker и pornolab
+// @description Автоматический разворот форума, для показа первых постов в списке раздач rutracker и pornolab<br/>0.0.0.3 	Поправил хоткеи, теперь если находимся не в области постов, хоткеи не срабатывают (мешали вводу поискового запроса на форме)
 // @include     http://rutracker.org/*
 // @include     http://pornolab.net/*
 // @version     0.0.0.3
