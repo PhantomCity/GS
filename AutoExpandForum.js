@@ -4,7 +4,7 @@
 // @description Автоматический разворот форума, для показа первых постов в списке раздач rutracker и pornolab
 // @include     http://rutracker.org/*
 // @include     http://pornolab.net/*
-// @version     0.0.0.2
+// @version     0.0.0.3
 // @_updateURL   https://userscripts.org/scripts/source/166707.user.js // чтоб вас!
 // @grant none
 // ==/UserScript==
@@ -16,9 +16,10 @@
 ///////////////////////////////////
 
 
-// 23:08 05.05.2013 заливка на us.org
-// 9:00 16.08.2014 Сброс версии
-// 9:03 16.08.2014 заливка на GitHUb + синхронизация с GitForge
+// 23:08 05.05.2013	*.*.*.*		заливка на us.org
+// 09:00 16.08.2014	0.0.0.1		Сброс версии
+// 09:03 16.08.2014	0.0.0.2		заливка на GitHUb + синхронизация с GitForge
+// 13:25 08.11.2014	0.0.0.3 	Поправил хоткеи, теперь если находимся не в области постов, хоткеи не срабатывают (мешали вводу поискового запроса на форме)
 
 var http = new XMLHttpRequest();
 var tempdoc = new DOMParser();
@@ -44,8 +45,6 @@ for (var i = 0; i<allrows.length; i++)
   if (allrows[i].id.indexOf('tr-') == 0)
     topics.push(allrows[i]);
 };
-
-
 
 // 
 
@@ -265,7 +264,7 @@ function setDocTitle(idx)
 
 function keypresshandler(e)
 {
-  if ((e.charCode == 106) || (e.keyCode == 37))
+  if (((e.charCode == 106)&&(msgidx != -1)) || (e.keyCode == 37))
   {
     msgidx++;
     if (msgidx >= msgs.length) msgidx = 0;
@@ -273,7 +272,7 @@ function keypresshandler(e)
     return false;
   }
 
-  if ((e.charCode == 107) || (e.keyCode == 39))
+  if (((e.charCode == 107)&&(msgidx != -1)) || (e.keyCode == 39))
   {
     msgidx--;
     if (msgidx < 0) msgidx = msgs.length -1;
@@ -281,13 +280,13 @@ function keypresshandler(e)
     return false;
   }
 
-  if ((e.charCode == 32))
+  if ((e.charCode == 32)&&(msgidx != -1))
   {
     window.open(msgs[msgidx].getAttribute('lnk'),  '_blank');
     return false;
   }
   
-  if ((e.charCode == 108) || (e.keyCode == 45))
+  if (((e.charCode == 108)&&(msgidx != -1)) || (e.keyCode == 45))
   {
     window.sidebar.addPanel(msgs[msgidx].getAttribute('ttl'), msgs[msgidx].getAttribute('lnk'), ''); 
     return false;
@@ -305,6 +304,7 @@ function scrollhandler(e)
     msgidx = i;
     return false;
   }
+  msgidx = -1;
   document.title = origtitle;
 }
 
