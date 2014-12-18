@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        autoforum
 // @namespace	PSVScripts
-// @description Автоматический разворот форума, для показа первых постов в списке раздач rutracker и pornolab	0.0.0.3 	Поправил хоткеи, теперь если находимся не в области постов, хоткеи не срабатывают (мешали вводу поискового запроса на форме)
+// @description Автоматический разворот форума, для показа первых постов в списке раздач rutracker и pornolab	0.0.0.4		Поправлена загрузка картинок (пропускались некоторые)
 // @include     http://rutracker.org/*
 // @include     http://pornolab.net/*
 // @version     0.0.0.3
@@ -20,6 +20,7 @@
 // 09:00 16.08.2014	0.0.0.1		Сброс версии
 // 09:03 16.08.2014	0.0.0.2		заливка на GitHUb + синхронизация с GitForge
 // 13:25 08.11.2014	0.0.0.3 	Поправил хоткеи, теперь если находимся не в области постов, хоткеи не срабатывают (мешали вводу поискового запроса на форме)
+// 23:58 18.12.2014	0.0.0.4		Поправлена загрузка картинок (пропускались некоторые)
 
 var http = new XMLHttpRequest();
 var tempdoc = new DOMParser();
@@ -104,7 +105,7 @@ function makeImages(dom)
 {
   var spans = dom.getElementsByTagName('var');
   var mwidth = window.innerWidth * 0.8;
-  for (var i = 0; i < spans.length; i++)
+  for (var i = spans.length -1; i>=0; i--)
   if (spans[i].className.indexOf('postImg') >= 0)
   {
     var aimg = document.createElement('img');
@@ -127,7 +128,7 @@ function makeImages(dom)
   }
 
   var spans = dom.getElementsByTagName('div');
-  for (var i = 0; i < spans.length; i++)
+  for (var i = spans.length -1; i>=0; i--)
   if (spans[i].className.indexOf('sp-') >= 0)
   {
     var imgs = spans[i].getElementsByTagName('img');
