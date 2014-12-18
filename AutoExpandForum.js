@@ -4,7 +4,7 @@
 // @description Автоматический разворот форума, для показа первых постов в списке раздач rutracker и pornolab	0.0.0.4		Поправлена загрузка картинок (пропускались некоторые)
 // @include     http://rutracker.org/*
 // @include     http://pornolab.net/*
-// @version     0.0.0.3
+// @version     0.0.0.4
 // @_updateURL   https://userscripts.org/scripts/source/166707.user.js // чтоб вас!
 // @grant none
 // ==/UserScript==
