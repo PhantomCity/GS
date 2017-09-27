@@ -7,6 +7,7 @@
 // @grant       GM_xmlhttpRequest
 // @grant       GM_openInTab
 // @grant       GM_registerMenuCommand
+//@contributionURL	https://www.paypal.me/GreasyScripts/1.5usd
 // ==/UserScript==
 
 
@@ -14,7 +15,6 @@
 // Впринципе развернуть можно кучу phpBB сайтов, но либо надо делать 
 // окно настроек, либо кастомизацию в коде
 ///////////////////////////////////
-
 
 // 23:08 05.05.2013	*.*.*.*		заливка на us.org
 // 09:00 16.08.2014	0.0.0.1		Сброс версии
@@ -31,6 +31,7 @@ var msgs = Array();
 var cellidx = 1;
 var topics = Array();
 var hasscipts = 0;
+
 
 
 var allrows = document.getElementsByTagName('tr');
