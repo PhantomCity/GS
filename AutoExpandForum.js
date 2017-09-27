@@ -1,13 +1,14 @@
 // ==UserScript==
-// @name        autoforum
-// @namespace	PSVScripts
-// @description Автоматический разворот форума, для показа первых постов в списке раздач rutracker и pornolab
-// @include     *
-// @version     0.0.0.6
-// @grant       GM_xmlhttpRequest
-// @grant       GM_openInTab
-// @grant       GM_registerMenuCommand
-//@contributionURL	https://www.paypal.me/GreasyScripts/1.5usd
+// @name		autoforum
+// @namespace		PSVScripts
+// @description		Автоматический разворот форума, для показа первых постов в списке раздач rutracker и ...
+// @include		*
+// @version		0.0.0.6
+// @grant		GM_xmlhttpRequest
+// @grant		GM_openInTab
+// @grant		GM_registerMenuCommand
+// @contributionURL	https://www.paypal.me/GreasyScripts/1.5usd
+// @supportURL		https://github.com/PhantomCity/GS/issues
 // ==/UserScript==
 
 
@@ -23,6 +24,8 @@
 // 23:58 18.12.2014	0.0.0.4		Поправлена загрузка картинок (пропускались некоторые)
 // 2017 09 27 16 13	0.0.0.5		Добавлены Grant, т.к. обязательны, убрано название обрабатываемых сайтов, потом прикрутить редактор списка обрабатываемых хостов.
 // 2017 09 27 17 07	0.0.0.6		Pal Donate
+// 2017 09 27 17 16	0.0.0.7		Support url
+
 
 var http = new XMLHttpRequest();
 var tempdoc = new DOMParser();
