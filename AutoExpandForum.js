@@ -3,7 +3,7 @@
 // @namespace		PSVScripts
 // @description		Автоматический разворот форума, для показа первых постов в списке раздач rutracker и ...
 // @include		*
-// @version		0.0.0.6
+// @version		0.0.0.7
 // @grant		GM_xmlhttpRequest
 // @grant		GM_openInTab
 // @grant		GM_registerMenuCommand
