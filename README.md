@@ -1,4 +1,1 @@
-GS
-==
-
-GreaceMonkey Scripts
+[GreaceMonkey Scripts git page](https://phantomcity.github.io/GS/)
