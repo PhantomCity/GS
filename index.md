@@ -1,10 +1,10 @@
-### GreaseScripts.
+## GreaseScripts.
 
-* [RUS](index_ru.md)
+<br/>[Русский язык](./ru/)
 
-* [AutoForum](https://github.com/PhantomCity/GS/raw/master/AutoExpandForum.js)
+### [AutoForum](https://github.com/PhantomCity/GS/raw/master/AutoExpandForum.js)
 <br/>This script expands every topic on pages with topics list, it loads first post of every topic and inserts its to topics list page.
 
 
-### Support or Contact
+#### Support or Contact
 [issues](https://github.com/PhantomCity/GS/issues/)
