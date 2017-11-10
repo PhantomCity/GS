@@ -1,11 +1,11 @@
 # GreaseScripts.
 <br/>
 <br/>
-<br/> ![](https://github.com/lipis/flag-icon-css/blob/master/flags/4x3/ru.svg?raw=true =32x) [Русский язык](./ru/)
+<br/> [Русский язык](./ru/)
 <br/>
 <br/>
-## [AutoForum](https://github.com/PhantomCity/GS/raw/master/AutoExpandForum.js)
-<br/>This script expands every topic on pages with topics list, it loads first post of every topic and inserts its to topics list page.
+## [AutoForum](https://greasyfork.org/en/scripts/4264-autoforum-forum-expander)
+This script expands every topic on pages with topics list, it loads first post of every topic and inserts its to topics list page.
 <br/>
 <hr/>
 ### Support or Contact
