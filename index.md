@@ -1,7 +1,7 @@
 # GreaseScripts.
 <br/>
 <br/>
-<br/> ![Язык](lipis/flag-icon-css/blob/master/flags/4x3/ru.svg =32x) [Русский язык](./ru/)
+<br/> ![Язык](https://github.com/lipis/flag-icon-css/blob/master/flags/4x3/ru.svg?raw=true =32x) [Русский язык](./ru/)
 <br/>
 <br/>
 ## [AutoForum](https://github.com/PhantomCity/GS/raw/master/AutoExpandForum.js)
