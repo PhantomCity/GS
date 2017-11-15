@@ -4,7 +4,7 @@
 // @namespace		PSVScripts
 // @description		Автоматический разворот форума, для показа первых постов в списке раздач rutracker и ... т.д.
 // @match		http*
-// @version		0.0.0.A
+// @version		0.0.0.10
 // @grant		GM_xmlhttpRequest
 // @grant		GM_openInTab
 // @grant		GM_registerMenuCommand
@@ -29,7 +29,7 @@
 // 2017 09 27 17 16	0.0.0.7		Support url
 // 2017 09 27 17 28	0.0.0.8		+Icon
 // 2017 11 10 17 10	0.0.0.9		Переехала ссылка синхронизации в индивидуальную подпапку
-// 2017 11 15 19 05	0.0.0.A		Переехала ссылка главной страницы скрипта
+// 2017 11 15 19 05	0.0.0.10	Переехала ссылка главной страницы скрипта
 
 
 var http = new XMLHttpRequest();
