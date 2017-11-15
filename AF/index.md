@@ -4,5 +4,5 @@ This script expands every topic on pages with topics list, it loads first post o
 ### Contacts:
 [Issues & Requests](https://github.com/PhantomCity/GS/issues/)
 
-<br/>[Main](../../)
+<br/>[Main](../)
 <br/>[RU](./RU/)
