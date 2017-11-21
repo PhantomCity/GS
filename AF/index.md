@@ -2,8 +2,8 @@
 This script expands every topic on pages with topics list, it loads first post of every topic and inserts its to topics list page.
 
 ### Contacts:
-<br/>[Issues & Requests](https://github.com/PhantomCity/GS/issues/)
-<br/>[Donate](https://www.paypal.me/GreasyScripts/1.5gbp)
+[Issues & Requests](https://github.com/PhantomCity/GS/issues/)<br/>
+[Donate](https://www.paypal.me/GreasyScripts/1.5gbp)<br/>
 
 <br/>[Main](../)
 <br/>[RU](./RU/)
