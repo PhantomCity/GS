@@ -1,4 +1,4 @@
-## [AutoForum](https://greasyfork.org/en/scripts/4264-autoforum-forum-expander)
+## [AutoForum](https://greasyfork.org/en/scripts/4264-autoforum-forum-expander) (on greasyfork.org)
 This script expands every topic on pages with topics list, it loads first post of every topic and inserts its to topics list page.
 
 ### Contacts:
