@@ -3,7 +3,8 @@
 <br/>
 <hr/>
 ### Контакты:
-[Доска отзывов и предложений](https://github.com/PhantomCity/GS/issues/)
+[Доска отзывов и предложений](https://github.com/PhantomCity/GS/issues/)<br/>
+[Дать на печеньки](https://www.paypal.me/GreasyScripts/1.5gbp)<br/>
 
 <br/>[Главная](../../)
 <br/>[EN](../)
