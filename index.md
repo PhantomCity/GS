@@ -1,2 +1,1 @@
-## GreaseScripts.
 ### [AutoForum](./AF/)
