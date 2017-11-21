@@ -3,6 +3,7 @@ This script expands every topic on pages with topics list, it loads first post o
 
 ### Contacts:
 [Issues & Requests](https://github.com/PhantomCity/GS/issues/)
+[Donate](https://www.paypal.me/GreasyScripts/1.5gbp)
 
 <br/>[Main](../)
 <br/>[RU](./RU/)
