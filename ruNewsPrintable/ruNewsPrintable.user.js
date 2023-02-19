@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            ruNews Printable page
 // @namespace       PSV_TMS
-// @version         0.10.16
+// @version         0.10.17
 // @description     Clean URL from unncessessary parts (utm_*, etc), and dropping url to printable versions, if possible
 // @author          PSV
 // @match           *://*/*
@@ -9,10 +9,12 @@
 // @homepage        https://greasyfork.org/ru/scripts/460304-runews-printable-page
 // @source          https://github.com/PhantomCity/GS/blob/master/ruNewsPrintable/ruNewsPrintable.user.js
 // @supportURL		https://greasyfork.org/ru/scripts/460304-runews-printable-page/feedback
+// @run-at          document-start
 // @grant           none
 // ==/UserScript==
 
 /*
+0.10.17             Changed RunAt property
 0.10.16             Added git Source page
 
 */
