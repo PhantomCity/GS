@@ -1,15 +1,21 @@
 // ==UserScript==
-// @name         ruNews Printable page
-// @namespace    PSV_TMS
-// @version      0.10.15
-// @description  Clean URL from unncessessary parts (utm_*, etc), and dropping url to printable versions, if possible
-// @author       PSV
-// @match        *://*/*
-// @icon         data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODIuNSA0ODIuNSI+PHBhdGggZD0iTTM5OS4yNSA5OC45aC0xMi40VjcxLjNjMC0zOS4zLTMyLTcxLjMtNzEuMy03MS4zaC0xNDkuN2MtMzkuMyAwLTcxLjMgMzItNzEuMyA3MS4zdjI3LjZoLTExLjNjLTM5LjMgMC03MS4zIDMyLTcxLjMgNzEuM3YxMTVjMCAzOS4zIDMyIDcxLjMgNzEuMyA3MS4zaDExLjJ2OTAuNGMwIDE5LjYgMTYgMzUuNiAzNS42IDM1LjZoMjIxLjFjMTkuNiAwIDM1LjYtMTYgMzUuNi0zNS42di05MC40aDEyLjVjMzkuMyAwIDcxLjMtMzIgNzEuMy03MS4zdi0xMTVjMC0zOS4zLTMyLTcxLjMtNzEuMy03MS4zem0tMjc3LjgtMjcuNmMwLTI0LjQgMTkuOS00NC4zIDQ0LjMtNDQuM2gxNDkuNmMyNC40IDAgNDQuMyAxOS45IDQ0LjMgNDQuM3YyNy42aC0yMzguMlY3MS4zem0yMzguMyAzNzUuOGMwIDQuNy0zLjkgOC42LTguNiA4LjZoLTIyMS4xYy00LjcgMC04LjYtMy45LTguNi04LjZWMjk4aDIzOC4zdjE0OS4xem04My44LTE2MS44YzAgMjQuNC0xOS45IDQ0LjMtNDQuMyA0NC4zaC0xMi40VjI5OGgxNy44YzcuNSAwIDEzLjUtNiAxMy41LTEzLjVzLTYtMTMuNS0xMy41LTEzLjVoLTMzMGMtNy41IDAtMTMuNSA2LTEzLjUgMTMuNXM2IDEzLjUgMTMuNSAxMy41aDE5Ljl2MzEuNmgtMTEuM2MtMjQuNCAwLTQ0LjMtMTkuOS00NC4zLTQ0LjN2LTExNWMwLTI0LjQgMTkuOS00NC4zIDQ0LjMtNDQuM2gzMTZjMjQuNCAwIDQ0LjMgMTkuOSA0NC4zIDQ0LjN2MTE1eiIvPjxwYXRoIGQ9Ik0xNTQuMTUgMzY0LjRoMTcxLjljNy41IDAgMTMuNS02IDEzLjUtMTMuNXMtNi0xMy41LTEzLjUtMTMuNWgtMTcxLjljLTcuNSAwLTEzLjUgNi0xMy41IDEzLjVzNi4xIDEzLjUgMTMuNSAxMy41em0xNzMgMjguMmgtMTcyYy03LjUgMC0xMy41IDYtMTMuNSAxMy41czYgMTMuNSAxMy41IDEzLjVoMTcxLjljNy41IDAgMTMuNS02IDEzLjUtMTMuNXMtNi0xMy41LTEzLjQtMTMuNXptNzEuOC0yNDAuN2gtMjcuNGMtNy41IDAtMTMuNSA2LTEzLjUgMTMuNXM2IDEzLjUgMTMuNSAxMy41aDI3LjRjNy41IDAgMTMuNS02IDEzLjUtMTMuNXMtNi0xMy41LTEzLjUtMTMuNXoiLz48L3N2Zz4=
-// @homepage    https://greasyfork.org/ru/scripts/460304-runews-printable-page
+// @name            ruNews Printable page
+// @namespace       PSV_TMS
+// @version         0.10.16
+// @description     Clean URL from unncessessary parts (utm_*, etc), and dropping url to printable versions, if possible
+// @author          PSV
+// @match           *://*/*
+// @icon            data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODIuNSA0ODIuNSI+PHBhdGggZD0iTTM5OS4yNSA5OC45aC0xMi40VjcxLjNjMC0zOS4zLTMyLTcxLjMtNzEuMy03MS4zaC0xNDkuN2MtMzkuMyAwLTcxLjMgMzItNzEuMyA3MS4zdjI3LjZoLTExLjNjLTM5LjMgMC03MS4zIDMyLTcxLjMgNzEuM3YxMTVjMCAzOS4zIDMyIDcxLjMgNzEuMyA3MS4zaDExLjJ2OTAuNGMwIDE5LjYgMTYgMzUuNiAzNS42IDM1LjZoMjIxLjFjMTkuNiAwIDM1LjYtMTYgMzUuNi0zNS42di05MC40aDEyLjVjMzkuMyAwIDcxLjMtMzIgNzEuMy03MS4zdi0xMTVjMC0zOS4zLTMyLTcxLjMtNzEuMy03MS4zem0tMjc3LjgtMjcuNmMwLTI0LjQgMTkuOS00NC4zIDQ0LjMtNDQuM2gxNDkuNmMyNC40IDAgNDQuMyAxOS45IDQ0LjMgNDQuM3YyNy42aC0yMzguMlY3MS4zem0yMzguMyAzNzUuOGMwIDQuNy0zLjkgOC42LTguNiA4LjZoLTIyMS4xYy00LjcgMC04LjYtMy45LTguNi04LjZWMjk4aDIzOC4zdjE0OS4xem04My44LTE2MS44YzAgMjQuNC0xOS45IDQ0LjMtNDQuMyA0NC4zaC0xMi40VjI5OGgxNy44YzcuNSAwIDEzLjUtNiAxMy41LTEzLjVzLTYtMTMuNS0xMy41LTEzLjVoLTMzMGMtNy41IDAtMTMuNSA2LTEzLjUgMTMuNXM2IDEzLjUgMTMuNSAxMy41aDE5Ljl2MzEuNmgtMTEuM2MtMjQuNCAwLTQ0LjMtMTkuOS00NC4zLTQ0LjN2LTExNWMwLTI0LjQgMTkuOS00NC4zIDQ0LjMtNDQuM2gzMTZjMjQuNCAwIDQ0LjMgMTkuOSA0NC4zIDQ0LjN2MTE1eiIvPjxwYXRoIGQ9Ik0xNTQuMTUgMzY0LjRoMTcxLjljNy41IDAgMTMuNS02IDEzLjUtMTMuNXMtNi0xMy41LTEzLjUtMTMuNWgtMTcxLjljLTcuNSAwLTEzLjUgNi0xMy41IDEzLjVzNi4xIDEzLjUgMTMuNSAxMy41em0xNzMgMjguMmgtMTcyYy03LjUgMC0xMy41IDYtMTMuNSAxMy41czYgMTMuNSAxMy41IDEzLjVoMTcxLjljNy41IDAgMTMuNS02IDEzLjUtMTMuNXMtNi0xMy41LTEzLjQtMTMuNXptNzEuOC0yNDAuN2gtMjcuNGMtNy41IDAtMTMuNSA2LTEzLjUgMTMuNXM2IDEzLjUgMTMuNSAxMy41aDI3LjRjNy41IDAgMTMuNS02IDEzLjUtMTMuNXMtNi0xMy41LTEzLjUtMTMuNXoiLz48L3N2Zz4=
+// @homepage        https://greasyfork.org/ru/scripts/460304-runews-printable-page
+// @source          https://github.com/PhantomCity/GS/blob/master/ruNewsPrintable/ruNewsPrintable.user.js
 // @supportURL		https://greasyfork.org/ru/scripts/460304-runews-printable-page/feedback
-// @grant        none
+// @grant           none
 // ==/UserScript==
+
+/*
+0.10.16             Added git Source page
+
+*/
 
 let domMap = {};
 
