@@ -11,9 +11,11 @@
 // @supportURL		https://greasyfork.org/ru/scripts/460304-runews-printable-page/feedback
 // @run-at          document-start
 // @grant           none
+// @noframes
 // ==/UserScript==
 
 /*
+0.10.18             Added noframes command, 
 0.10.17             Changed RunAt property
 0.10.16             Added git Source page
 
@@ -46,7 +48,7 @@ domMap["www.fontanka.ru"] = {
     "Title":"fontanka",
     "Function": redirPath,
     "Param":{
-        "Source": /\S*fontanka\.ru\/(\d{4}\/\d{2}\/\d{2}\/\d+)\/\S*/,
+        "Source": /\S*fontanka\.ru\/(\d{4}\/\d{2}\/\d{2}\/\d+)\/(?!print|all\.comments)\S*/,
         "Target": 'https://www.fontanka.ru/$UID/print.html/'
     }
 };
