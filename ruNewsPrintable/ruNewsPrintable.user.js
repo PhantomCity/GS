@@ -15,6 +15,7 @@
 // ==/UserScript==
 
 /*
+0.12.20             Added ndn.info source;
 0.11.19             Added v102 source;
 0.10.18             Added noframes command;
 0.10.17             Changed RunAt property
@@ -133,6 +134,15 @@ domMap["v102.ru"] = {
     }
 };
 
+
+domMap["ndn.info"] = {
+    "Title":"ndn.info",
+    "Function": redirPath,
+    "Param":{
+        "Source": /\S*ndn\.info\/novosti\/(\d+-\S+)\/(?!\??print=)\S*/,
+        "Target": 'https://ndn.info/novosti/$UID/?print=print'
+    }
+};
 
 
 
