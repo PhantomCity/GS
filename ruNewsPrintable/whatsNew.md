@@ -1,7 +1,9 @@
 
 ## What's new
 
- - 0.11.19 - 2023 02 23 15 13
+ - 0.12.20
+   - Added ndn.info source;
+ - 0.11.19
    - Added v102.ru source;
  - 0.10.18
    - Added noframes command;
