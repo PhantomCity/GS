@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            ruNews Printable page
 // @namespace       PSV_TMS
-// @version         0.11.19
+// @version         0.12.20
 // @description     Clean URL from unncessessary parts (utm_*, etc), and dropping url to printable versions, if possible
 // @author          PSV
 // @match           *://*/*
