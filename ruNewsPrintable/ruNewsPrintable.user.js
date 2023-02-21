@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            ruNews Printable page
 // @namespace       PSV_TMS
-// @version         0.10.18
+// @version         0.11.19
 // @description     Clean URL from unncessessary parts (utm_*, etc), and dropping url to printable versions, if possible
 // @author          PSV
 // @match           *://*/*
@@ -15,7 +15,8 @@
 // ==/UserScript==
 
 /*
-0.10.18             Added noframes command, 
+0.11.19             Added v102 source;
+0.10.18             Added noframes command;
 0.10.17             Changed RunAt property
 0.10.16             Added git Source page
 
@@ -122,6 +123,17 @@ domMap["dddkursk.ru"] = {
         "Target": 'https://dddkursk.ru/lenta/$UID/print/'
     }
 };
+
+domMap["v102.ru"] = {
+    "Title":"v102",
+    "Function": redirPath,
+    "Param":{
+        "Source": /\S*v102\.ru\/news\/(\d*.html)([?#]\S*)?/,
+        "Target": 'https://v102.ru/print/$UID'
+    }
+};
+
+
 
 
 // https://dddkursk.ru/lenta/2023/02/17/095012/
