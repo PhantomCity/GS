@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              PagePrintableView
 // @author            SpyDeX
-// @namespace		      PSVScripts
+// @namespace         PSVScripts
 // @description       Открытие некоторых страниц в режиме "очищенного текста" в отдельном окне, набросок скрипта для "PrintFriendly" очистки вручуню.
-// @include           https*
-// @include           http*
+// @match             https*
+// @match             http*
 // @version           0.0.0.1
 // @grant             GM_xmlhttpRequest
 // @grant             GM_openInTab
